@@ -12,7 +12,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-public class popups {
+public class popup_notAlert {
 
 	
 	 public static String fileWithPath;
@@ -27,7 +27,7 @@ public class popups {
 		   Thread.sleep(5000);
 		   driver.manage().window().maximize();
 		   driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		   WebElement linktext = driver.findElement(By.xpath("/html/body/div[2]/header/div[3]/div/div[1]/div/div/div/div[1]/ul/li[1]"));
+		   WebElement linktext = driver.findElement(By.id("webklipper-publisher-widget-container-notification-close-div"));
 		   linktext.click();
 		   
 	 
